@@ -1,4 +1,5 @@
-
+MariaDB [test]> create table userdata(id int,name varchar(30),email varchar(40),
+phone varchar(30),password varchar(40),image blob);
 
 MariaDB [test]> desc userdata;
 +----------+-------------+------+-----+---------+-------+
