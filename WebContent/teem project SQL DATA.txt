@@ -1,0 +1,16 @@
+
+
+MariaDB [test]> desc userdata;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| id       | int(11)     | YES  |     | NULL    |       |
+| name     | varchar(30) | YES  |     | NULL    |       |
+| email    | varchar(40) | YES  |     | NULL    |       |
+| phone    | varchar(30) | YES  |     | NULL    |       |
+| password | varchar(40) | YES  |     | NULL    |       |
+| image    | blob        | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+6 rows in set (0.07 sec)
+
+MariaDB [test]>
