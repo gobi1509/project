@@ -1,3 +1,4 @@
+package login;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -13,8 +14,10 @@ public class TeamProcess1 extends TeamProcess{
 		try{
 			
 		Statement s=c.createStatement();
-		ResultSet k=s.executeQuery("select * from login where username="+username+" and password="+password);
-		if(k.next()==true)
+		String query ="select * from userdata where email='"+username+"' and password='"+password+"'";
+		System.out.println(query);
+		ResultSet k=s.executeQuery(query);
+		if(k.next())
 		{
 			b= true;
 		}else
@@ -24,6 +27,7 @@ public class TeamProcess1 extends TeamProcess{
 		}
 		catch(SQLException e)
 		{
+			System.out.println(e);
 			return false;
 		}
 	return b;
