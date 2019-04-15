@@ -43,7 +43,7 @@ public class UserBack extends HttpServlet {
 		TeamProcess1 obj=new TeamProcess1();
 	boolean g=	obj.login(n, k);
 		System.out.println(g);
-		
+		request.setAttribute("name", n);
 		
 		if(g == true)
 		{

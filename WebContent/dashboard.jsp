@@ -7,8 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+Welcome 
+<%
+String s = (String) request.getAttribute("name");
 
-Welcome
-
+out.print(s);
+%>
 </body>
 </html>
